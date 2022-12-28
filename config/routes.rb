@@ -7,6 +7,11 @@ Rails.application.routes.draw do
   # Read all
   get "tasks", to: "tasks#index"
 
+  # Create
+  get "tasks/new", to: "tasks#new"
+  post "tasks", to: "tasks#create"
+
   # Read one
   get "tasks/:id", to: "tasks#show", as: :task
+
 end
