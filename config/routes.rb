@@ -14,4 +14,10 @@ Rails.application.routes.draw do
   # Read one
   get "tasks/:id", to: "tasks#show", as: :task
 
+  # Update
+  get "tasks/:id/edit", to: "tasks#edit"
+  patch "tasks/:id", to: "tasks#update"
+
+  # Delete
+  
 end
